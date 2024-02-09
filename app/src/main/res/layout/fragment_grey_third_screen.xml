@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/linearProgressIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:progress="51"
+        app:indicatorColor="#77BA9E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:trackColor="#E6E6E6" />
+
+    <TextView
+        android:id="@+id/four_dialog_preferences"
+        android:layout_width="192dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/a_avantebs_0"
+        android:text="Your profile"
+        android:textColor="#414244"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearProgressIndicator" />
+
+    <TextView
+        android:id="@+id/four_dialog_age_range"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/a_avantebs_0"
+        android:text="Birthday"
+        android:textColor="#414244"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/four_dialog_preferences" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/third_dialog_birthday_input_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/background_edittext"
+        android:fontFamily="@font/nunito_regular"
+        android:inputType="date"
+
+        android:paddingStart="16dp"
+        android:textColor="#414244"
+        android:textColorHint="#414244"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/four_dialog_age_range" />
+
+    <TextView
+        android:id="@+id/third_dialog_text_view_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/a_avantebs_0"
+        android:text="Users will see your age, not your birthday. You can choose to hide your age later."
+        android:textColor="#414244"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/third_dialog_birthday_input_text" />
+
+    <TextView
+        android:id="@+id/third_dialog_height_text_view"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/a_avantebs_0"
+        android:text="Height"
+        android:textColor="#414244"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/third_dialog_text_view_birthday" />
+
+    <TextView
+        android:id="@+id/third_dialog_height_text_imperial"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/a_avantebs_0"
+        android:gravity="bottom"
+        android:text="heigth"
+        android:textColor="#414244"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/third_dialog_height_text_view" />
+
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:max="22"
+        android:maxHeight="6dp"
+        android:min="1"
+        android:minHeight="6dp"
+        android:progress="7"
+
+        android:progressDrawable="@drawable/progress_drawable"
+        android:thumb="@drawable/thumb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/third_dialog_height_text_imperial" />
+
+    <TextView
+        android:id="@+id/third_dialog_ethnicity_text_view"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Ethnicity"
+        android:textColor="#414244"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/third_dialog_edit_text_education"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/background_edittext"
+        android:fontFamily="@font/nunito_regular"
+        android:hint="None Stated"
+        android:paddingStart="16dp"
+        android:textColor="#414244"
+        android:textColorHint="#414244"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/third_dialog_ethnicity_text_view" />
+
+
+    <ImageButton
+        android:id="@+id/third_dialog_right_arrow"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/next"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_marginBottom="12dp"
+        android:background="#D9D9D9"
+        app:layout_constraintBottom_toTopOf="@+id/_dialog_setting_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/_dialog_setting_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:src="@drawable/settings_iconsetting"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/second_dialog_time_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:src="@drawable/icontime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

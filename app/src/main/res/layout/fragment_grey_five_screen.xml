@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/linearProgressIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:progress="85"
+        app:indicatorColor="#77BA9E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:trackColor="#E6E6E6" />
+
+    <TextView
+        android:id="@+id/second_dialog_basics"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/a_avantebs_0"
+        android:text="ADD A PHOTO"
+        android:textColor="#414244"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearProgressIndicator" />
+
+
+    <TextView
+        android:id="@+id/second_dialog_your_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/a_avantebs_0"
+        android:text="Your first photo is your impression, so make sure it's your best one! After you're you can change this to a video."
+        android:textColor="#414244"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_dialog_basics" />
+
+
+    <ImageButton
+        android:id="@+id/four_screen_facebook_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+
+        android:background="@drawable/facebook"
+        android:fontFamily="@font/a_avantebs_0"
+
+
+        app:layout_constraintStart_toEndOf="@+id/four_screen_camera_button"
+        app:layout_constraintTop_toBottomOf="@+id/second_dialog_your_name" />
+
+    <ImageButton
+        android:id="@+id/four_screen_camera_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/camera"
+        android:fontFamily="@font/a_avantebs_0"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_dialog_your_name" />
+
+    <ImageButton
+        android:id="@+id/four_screen_instagram"
+        android:layout_marginTop="30dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/instagram"
+
+        app:layout_constraintStart_toEndOf="@+id/four_screen_facebook_button"
+        app:layout_constraintTop_toBottomOf="@+id/second_dialog_your_name" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/a_avantebs_0"
+        android:gravity="center"
+        android:text="Add with Camera Roll"
+        android:textColor="#414244"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/four_screen_camera_button" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/a_avantebs_0"
+        android:gravity="center"
+        android:text="Add with Facebook"
+        android:textColor="#414244"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/four_screen_facebook_button" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/a_avantebs_0"
+        android:gravity="center"
+        android:text="Add with Instagram"
+        android:textColor="#414244"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/four_screen_facebook_button" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="16dp"
+
+        android:background="#E6E6E6"
+        app:layout_constraintBottom_toTopOf="@+id/second_dialog_setting_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/second_dialog_setting_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:src="@drawable/settings_iconsetting"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/second_dialog_time_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="16dp"
+
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:src="@drawable/icontime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/four_screen_right_arrow"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/next"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

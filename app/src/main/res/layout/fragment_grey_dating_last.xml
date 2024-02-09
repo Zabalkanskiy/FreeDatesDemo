@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/graydating_last_activity_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleX="1.25"
+        android:scaleY="1.25"
+        android:scaleType="fitXY"
+
+        android:src="@drawable/background_screen7" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/last_activity_facebook_button"
+        android:layout_width="240dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/a_avantebs_0"
+        android:text="Continue with Facebook"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/last_activity_sms_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/last_activity_sms_button"
+
+        android:layout_width="240dp"
+        android:layout_height="55dp"
+
+        android:layout_marginBottom="204dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/a_avantebs_0"
+        android:text="@string/continue_with_sms"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/imageView"
+        android:theme="@style/checkBoxStyle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="68dp"
+        android:checked="false"
+
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- android:button="@drawable/checkbox_selector"
+      android:buttonTint="#808080"-->
+
+    <TextView
+
+        android:id="@+id/last_activity_textView"
+        android:layout_width="290dp"
+        android:layout_height="70dp"
+
+        android:layout_marginTop="96dp"
+        android:fontFamily="@font/nunito_regular"
+        android:text="@string/link"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/last_activity_sms_button" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

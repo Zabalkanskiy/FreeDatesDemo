@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Free Dates Demo</string>
+    <string name="hyper_link"><![CDATA[By signing up The Free Dates you agree to our <a href=\"https://www.google.com/\">Terms of Service</a>  and <a href=\"https://www.google.com/\">Privacy Policy</a>]]></string>
+    <string name="link">By signing up The League you agree to our <a href="https://www.google.com/">Terms of Service</a>  and <a href="https://www.google.com/">Privacy Policy</a></string>
+    <string name="continue_with_sms">Continue with SMS</string>
+</resources>
